@@ -1,0 +1,236 @@
+@import "reset.css";
+body{
+  width:100%;
+  height:auto;
+  font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+  font-size: 16px;
+  background:#ddffff;
+}
+
+#top{
+  width: 100%;
+  height: 60px;
+  background: url(../HP-images/header-footer0.jpg);
+  background-size: cover;
+  position: relative;
+}
+#top h1{
+  font-family:  YuMincho, 'Yu Mincho',  "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color:#333;
+  margin-left: 15px;
+}
+#search{
+  position: absolute;
+  right: 0;
+  bottom:2%;
+}
+/*-----wrapper------*/
+#wrapper{
+  background: url(../HP-images/AdobeStock_311485536.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100vw;
+  height: 50vw;
+}
+
+#wrapper .moji{
+  font-weight: bold;
+  font-size:2rem;
+  color: #fff;
+}
+#wrapper .description01{
+  position: absolute;
+  left:20%;
+  top:50%;
+  text-shadow: 1px 1px 1px rgba(255,255,0,0.3);
+
+}
+#wrapper .description02{
+  position: absolute;
+  right: 30px;
+  bottom:140px;
+}
+#NAV{
+  display: flex;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom:0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+}
+#NAV a{
+  text-decoration: none;
+  color:#ffffff;
+  border-right: 1px solid white;
+  padding: 0 10px;
+}
+#NAV a:last-child{
+  border-right: none;
+}
+#NAV a:hover{
+  text-decoration: underline;
+  color:#333;
+  transition: all 0.5s;
+}
+h2{
+  font-size: 2rem;
+  width: 100%;
+  color:#333;
+  text-align: center;
+  margin:0 0 20px 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+h2 a{
+  display: block;
+  text-decoration: none;
+}
+#CONTENTS img{
+  width: 300px;
+  height: 225px;
+  /* margin-right:20px; */
+  border-radius: 50px;
+
+}
+#CONTENTS a:hover{
+  opacity: 0.7;
+  text-decoration: underline;
+  transition: all 0.8s;
+  color:#333;
+
+}
+#CONTENTS{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  margin: 0 auto;
+}
+h3{
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 300px;
+  position: absolute;
+  text-align: center;
+}
+h3 a{
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+h4{
+  font-size: 1.5rem;
+}
+#ibent{
+  text-align: center;
+  width: 100%;
+  background-size:cover;
+  padding: 20px;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+  margin-bottom: 20px;
+}
+#ibent p{
+  font-size: 2rem;
+}
+#ibent article img{
+  width:90%;
+  margin: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  text-align: center;
+}
+.conteiner h4{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#ibent  a:hover{
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+#ibent p{
+  font-size: 1rem;
+}
+#pagetop img{
+  width: 110%;
+  height: 90%;
+  border-radius: 20px;
+}
+#pagetop{
+  position: fixed;
+  left:92%;
+  bottom:3%;
+}
+#pagetop a:hover{
+  opacity: 0.7;
+}
+#chizzu{
+  clear: both;
+  text-align: center;
+  padding-top: 40px;
+}
+#chizzu p{
+  padding-top: 40px;
+
+}
+footer{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: url(../HP-images/header-footer0.jpg);
+  background-size: cover;
+}
+small{
+  position: absolute;
+  bottom:0;
+  font-size: 0.5rem;
+}
+/*--画面サイズが768pxから1024pxまではここを読み込む--*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+  #wrapper {
+    height: 50vw;
+  }
+  .conteiner{
+    margin-left: 40px;
+  }
+  #NAV{
+    position: absolute;
+    right: 0
+  }
+}
+
+/*--画面サイズが1024pxからはここを読み込む--*/
+@media screen and (min-width:1024px) {
+  #wrapper {
+    height: 50vw;
+  }
+  .conteiner{
+    display: flex;
+    justify-content: space-between;
+
+}
+  #CONTENTS img{
+    width: 400px;
+
+  }
+  h3{
+    padding-left: 70px;
+  }
+  #NAV{
+    font-size: 2rem;
+  }
+  #wrapper .description01{
+    font-size: 3rem;
+    text-shadow: 4px 4px 4px rgba(255,255,0,0.7);
+    position: absolute;
+    left:550px;
+    top:320px
+  }
+  h2{
+    font-size: 3rem;
+    margin:20px 0 30px;
+  }
