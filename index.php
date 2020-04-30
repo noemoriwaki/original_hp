@@ -9,12 +9,12 @@
   <body>
     <header id="top">
       <h1>Aichi Aquarium</h1>
-      <!-- <nav id="search">
+      <nav id="search">
         <a href="#">キーワード検索</a>
         <a href="#">ログイン</a> -->
-      <!-- </nav>  -->
+      <!-- </nav> 
     </header>
-    <div id="wrapper"><!--画像に動きを与える-->
+    <div id="wrapper">画像に動きを与える-->
         <div class="moji">
           <p class="description01">水族館へ行こう！</p>
         </div>
