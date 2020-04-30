@@ -10,7 +10,7 @@
     <header id="top">
       <h1>Aichi Aquarium</h1>
       <nav id="search">
-        <a href="#">キーワード検索</a>
+        <!-- <a href="#">キーワード検索</a> -->
         <a href="#">ログイン</a> -->
       <!-- </nav> 
     </header>
