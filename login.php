@@ -18,14 +18,16 @@ if (!empty($_POST)) {
     // emailが合っている場合
     $user = findUserByEmail($dbh, $_POST["email"]) ;
         //passwordも合っている場合
+        if(password_verify($_POST["password"], $user["password"])) {
             $_SESSION["login"] = true;
         // どのページでもログイン状態にする
             $_SESSION["user"] = $user;
         // ログインするとマイページへ飛ぶ
         header('Location: original.php');
         exit;
-}else {
-    echo 'Invalid password.';
+        }else {
+            echo 'Invalid password.';
+        }
 }
 // ログインしているのか表示
 if ($_SESSION["login"]) {
